@@ -29,6 +29,10 @@ Please follow our [installation.md](installation.md) to install.
 
 ### Demo shell
 You can run the model for semantic and panoptic segmentation in a few command lines.
+#### (Important) Before run:
+    
+    # Fix KeyError: "EncoderDecoder: 'VIT_MLA is not in the models registry'"
+    $env:PYTHONPATH = "$PWD;" + $env:PYTHONPATH
 
 #### semantic segmentation:
 

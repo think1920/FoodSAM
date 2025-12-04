@@ -1,6 +1,6 @@
 ## Installation
 
-We have tested the code with `python==3.10.10` and `pytorch==1.12.1`, other late versions may also work well. 
+[I](https://github.com/think1920) have tested the code with `python==3.10.10` and `pytorch==1.12.1`, other late versions may also work well. 
 <br>
 Welcome to provide feedback or suggestion for the version list!
 <!-- Please follow the instructions [here](https://pytorch.org/get-started/locally/) to install both PyTorch dependencies. 
@@ -35,7 +35,7 @@ pip install -r requirement.txt
 ```
 e. Finally download the checkpoints folder, and move it to main project.
 
-[SAM-vit-h+FoodSeg103-SETR-MLA+UNIDET-Unified_learned_OCIM_RS200_6x+2x](https://drive.google.com/drive/folders/1uYRKuY-c_ebB9rx_lc6axp_XvqlIGfKa?usp=sharing)
+[SAM-vit-h and FoodSeg103-SETR-MLA and UNIDET-Unified_learned_OCIM_RS200_6x+2x](https://drive.google.com/drive/folders/1uYRKuY-c_ebB9rx_lc6axp_XvqlIGfKa?usp=sharing)
 
 
 ## Dataset and configs

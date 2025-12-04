@@ -1,6 +1,6 @@
 ## Installation
 
-We have tested the code with `python==3.7` and `pytorch=1.8`, other late versions may also work well. 
+We have tested the code with `python==3.10.10` and `pytorch==1.12.1`, other late versions may also work well. 
 <br>
 Welcome to provide feedback or suggestion for the version list!
 <!-- Please follow the instructions [here](https://pytorch.org/get-started/locally/) to install both PyTorch dependencies. 
@@ -9,41 +9,34 @@ Installing PyTorch and TorchVision with CUDA support is strongly recommended. --
 Install FoodSAM with the following steps:
 
 a. Clone the repository locally:
-
 ```
 git clone https://github.com/jamesjg/FoodSAM.git
 ```
-b. Create a conda virtual environment and activate it
+b. Create a conda virtual environment and activate it (Optional)
 ```
-conda create -n FoodSAM python=3.7 -y
+conda create -n FoodSAM python=3.10.10 -y
 conda activate FoodSAM
 ```
-c. Install PyTorch and torchvision following the [official instructions](https://pytorch.org/). Here we use PyTorch 1.8.1 and CUDA 11.1. You may also switch to another version by specifying the version number.
+c. Install PyTorch and torchvision following the [official instructions](https://pytorch.org/). Here I use PyTorch 1.12.1 and CUDA 11.3. You may also switch to another version by specifying the version number.
 ```
-pip install torch==1.8.1+cu111 torchvision==0.9.1+cu111 torchaudio==0.8.1 -f https://download.pytorch.org/whl/torch_stable.html
+pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio==0.12.1+cu113 -f https://download.pytorch.org/whl/torch_stable.html
 ```
 d. Install MMCV following the [official instructions](https://mmcv.readthedocs.io/en/latest/#installation). 
 ```
-pip install mmcv-full==1.3.0 -f https://download.openmmlab.com/mmcv/dist/cu110/torch1.8.0/index.html
+pip install mmcv-full==1.6.2 -f https://download.openmmlab.com/mmcv/dist/cu113/torch1.12/index.html
 ```
 e. Install SAM following official [SAM installation](https://github.com/facebookresearch/segment-anything).
 ```
-pip install git+https://github.com/facebookresearch/segment-anything.git@6fdee8f
+pip install git+https://github.com/facebookresearch/segment-anything.git
 ```
 f. other requirements
 ```
 pip install -r requirement.txt
 ```
+e. Finally download the checkpoints folder, and move it to main project.
 
-e. Finally download three checkpoints, and move them to "ckpts/" folder as described.
+[SAM-vit-h+FoodSeg103-SETR-MLA+UNIDET-Unified_learned_OCIM_RS200_6x+2x](https://drive.google.com/drive/folders/1uYRKuY-c_ebB9rx_lc6axp_XvqlIGfKa?usp=sharing)
 
-[SAM-vit-h](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth)
-
-[FoodSeg103-SETR-MLA](https://smu-my.sharepoint.com/personal/xwwu_smu_edu_sg/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fxwwu%5Fsmu%5Fedu%5Fsg%2FDocuments%2Fcheckpoints%2Ezip&parent=%2Fpersonal%2Fxwwu%5Fsmu%5Fedu%5Fsg%2FDocuments&ga=1)
-
-[UNIDET-Unified_learned_OCIM_RS200_6x+2x](https://drive.google.com/file/d/1HvUv399Vie69dIOQX0gnjkCM0JUI9dqI/edit)
-
-If the above links are not working, you also can download them in [Baidu Disk](https://pan.baidu.com/s/1o1w_Vejrtd7rvWVorSQZfg?pwd=pyyk) (code:`pyyk`).
 
 ## Dataset and configs
 For UNIDET and FoodSeg103, the configs are already put into the [configs](configs/) folder. 

@@ -42,7 +42,7 @@ e. Finally download the checkpoints folder, and move it to main project.
 For UNIDET and FoodSeg103, the configs are already put into the [configs](configs/) folder. 
 You can also download other ckpt and configs from their official links.
 
-The default dataset we use is [FoodSeg103](https://github.com/LARC-CMU-SMU/FoodSeg103-Benchmark-v1), other semantic segmentation food datasets like [UECFOODPIXCOMPLETE](https://mm.cs.uec.ac.jp/uecfoodpix/) can also be used. But you should change the  `args.category_txt and args.num_class`. The dataset should be put in the "dataset/"folder.
+The default dataset [we](https://github.com/jamesjg) use is [FoodSeg103](https://github.com/LARC-CMU-SMU/FoodSeg103-Benchmark-v1), other semantic segmentation food datasets like [UECFOODPIXCOMPLETE](https://mm.cs.uec.ac.jp/uecfoodpix/) can also be used. But you should change the  `args.category_txt and args.num_class`. The dataset should be put in the "dataset/"folder.
 
 Your data, configs, and ckpt path should look like this:
 ````

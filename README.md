@@ -40,7 +40,7 @@ You can run the model for semantic and panoptic segmentation in a few command li
     python FoodSAM/semantic.py --img_path <path/to/img> --output <path/to/output> 
 
     # semantic segmentation for one folder
-    python FoodSAM/semantic.py --data_root <path/to/folder> --output <path/to/output>
+    python FoodSAM/semantic.py --data_root <path/to/folder> --img_dir "." --output <path/to/output>
 
 #### panoptic segmentation:
 
@@ -48,7 +48,7 @@ You can run the model for semantic and panoptic segmentation in a few command li
     python FoodSAM/panoptic.py --img_path <path/to/img> --output <path/to/output>
 
     # panoptic segmentation for one folder
-    python FoodSAM/panoptic.py --data_root <path/to/folder> --output <path/to/output>
+    python FoodSAM/panoptic.py --data_root <path/to/folder> --img_dir "." --output <path/to/output>
 
 
 

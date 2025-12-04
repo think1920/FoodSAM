@@ -5,5 +5,4 @@ matplotlib==3.5.3
 fvcore==0.1.5.post20221221
 cloudpickle==2.2.1
 omegaconf==2.3.0
-pycocotools==2.0.6
 werkzeug==2.2.3
